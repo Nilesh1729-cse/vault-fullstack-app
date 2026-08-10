@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard · Vault</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="dash-shell">
+  <nav class="dash-nav">
+    <div class="brand-mark"><span class="dot"></span> vault access</div>
+    <button class="btn-logout" id="logout-btn">Sign out</button>
+  </nav>
+
+  <main class="dash-main">
+    <p class="eyebrow">Account</p>
+    <h1>Welcome<span id="welcome-name"></span>.</h1>
+
+    <div class="alert" data-alert></div>
+
+    <div class="card-grid">
+      <div class="info-card">
+        <div class="label">Name</div>
+        <div class="value" data-field="name"><span class="skeleton"></span></div>
+      </div>
+      <div class="info-card">
+        <div class="label">Email</div>
+        <div class="value" data-field="email"><span class="skeleton"></span></div>
+      </div>
+      <div class="info-card">
+        <div class="label">Role</div>
+        <div class="value" data-field="role"><span class="skeleton"></span></div>
+      </div>
+      <div class="info-card">
+        <div class="label">Member since</div>
+        <div class="value" data-field="created_at"><span class="skeleton"></span></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
